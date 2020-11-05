@@ -1,0 +1,47 @@
+.shoe {
+  background: radial-gradient(
+    ellipse at top,
+    rgba($primary-color, 0.5) 0%,
+    rgba(0, 0, 0, 0) 70%
+  );
+  width: 22em;
+  color: $primary-color;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  margin-left: 1em;
+  margin-right: 1em;
+
+  &-img {
+    height: 150px;
+    margin: 1em;
+    padding: 0.5em;
+  }
+
+  &-text {
+    font-size: 17px;
+    text-align: justify;
+    padding: 1em;
+    padding-top: 0;
+  }
+
+  &-name {
+    padding-top: 2em;
+    padding-bottom: 0.5em;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+}
+
+.btn {
+  &-group {
+    margin: 2em;
+  }
+
+  &-dark {
+    background: none;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+}
