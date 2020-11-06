@@ -2,6 +2,7 @@ import React, { Component } from "react";
 
 import Navbar from "../layout/Navbar";
 import ShoeCard from "../card/ShoeCard";
+import Pagination from "../pagination/Pagination";
 
 import ultraboost from "../../assets/ultraboost.png";
 import airjordan1 from "../../assets/airjordan1.png";
@@ -12,7 +13,7 @@ export default class Shop extends Component {
     return (
       <div>
         <Navbar />
-          <div className="row justify-content-center card-group">
+          <div className="d-flex justify-content-center content">
             <ShoeCard
               image={ultraboost}
               height="130px"
@@ -37,6 +38,9 @@ export default class Shop extends Component {
                of his name and you'll win big on the streets. Top to bottom, these shoes capture the essential style of the 1971 original."
                price="RM 380.00"
             />
+        </div>
+        <div className="d-flex justify-content-center py-5">
+          <Pagination />
         </div>
       </div>
     );

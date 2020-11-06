@@ -12,7 +12,7 @@ export default class Home extends Component {
     return (
       <div>
         <Navbar />
-        <div className="d-flex justify-content-center card-group">
+        <div className="d-flex justify-content-center content">
           <div className="row">
             <BrandCard image={nike} paddingTop="4em" height="200px" />
             <BrandCard image={adidas} height="180px" />

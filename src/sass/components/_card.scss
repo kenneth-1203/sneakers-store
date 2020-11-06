@@ -10,7 +10,7 @@
   );
   border: none;
   box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.3);
-  height: 25em;
+  height: 30em;
   margin-left: 2em;
   margin-right: 2em;
   padding: 2em;
@@ -22,11 +22,6 @@
       rgba(61, 61, 61, 0.3) 0%,
       rgba(0, 0, 0, 0) 52%
     );
-  }
-
-  &-group {
-    width: 100%;
-    transition: 0.5s;
   }
 }
 

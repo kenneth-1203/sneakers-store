@@ -1,0 +1,79 @@
+.payment {
+  &-content {
+    padding-bottom: 130%;
+    color: $primary-color;
+    background: rgba($secondary-color, 0.7);
+    width: 80%;
+    float: right;
+    border-radius: 10px;
+    box-shadow: -2px 5px 15px rgba(0, 0, 0, 0.5);
+  }
+
+  &-title {
+    font-weight: 700;
+    font-size: 24px;
+    padding: 1em;
+  }
+
+  &-form {
+    margin-left: 2em;
+
+    & label {
+      color: $primary-color;
+    }
+
+    & .form-control {
+      @include input-list;
+      padding: 0;
+      font-size: 14px;
+      color: rgba($primary-color, 0.5);
+    }
+  }
+}
+
+.cart {
+  &-group {
+    text-transform: uppercase;
+  }
+
+  &-content {
+    width: 90%;
+    padding-bottom: 130%;
+    margin-top: 2em;
+    color: $primary-color;
+    background: rgba($tertiary-color, 0.7);
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.5);
+  }
+
+  &-title,
+  &-subtitle {
+    font-size: 24px;
+    font-weight: 700;
+    padding: 1em;
+    padding-top: 1em;
+    padding-bottom: 0;
+    text-shadow: $text-shadow;
+  }
+
+  &-subtitle {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  &-item {
+    &-name {
+      font-size: 20px;
+      text-transform: none;
+      font-weight: 700;
+      text-shadow: $text-shadow;
+    }
+
+    &-text,
+    &-price,
+    &-icon {
+      text-shadow: $text-shadow;
+    }
+  }
+}

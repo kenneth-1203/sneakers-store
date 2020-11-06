@@ -13,10 +13,10 @@ export default class Layout extends Component {
     function openNav() {
       document.getElementById("mySidenav").style.width = "250px";
       document.getElementById("main").style.marginRight = "250px";
-      document.querySelector(".card-group").style.width = "85%";
+      document.querySelector(".content").style.width = "85%";
       setTimeout(() => {
         document.querySelector(".sidenav-buttons").style.opacity = 1;
-      }, 250);
+      }, 300);
     }
 
     /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
@@ -24,7 +24,7 @@ export default class Layout extends Component {
       document.querySelector(".sidenav-buttons").style.opacity = 0;
       document.getElementById("mySidenav").style.width = "0";
       document.getElementById("main").style.marginRight = "0";
-      document.querySelector(".card-group").style.width = "100%";
+      document.querySelector(".content").style.width = "100%";
     }
     return (
       <div>
@@ -49,7 +49,7 @@ export default class Layout extends Component {
               />
               <SidebarItem
                 item={airjordan1}
-                name="Nike Air Jordan 1"
+                name="Nike Air Jordan 1..."
                 height="38px"
                 price="RM 499.00"
               />
@@ -61,7 +61,7 @@ export default class Layout extends Component {
         <div id="main">
           <nav className="navbar" id="navbar">
             <div className="col-sm-3">
-              <Link to="/" style={{ textDecoration: 'none' }}>
+              <Link to="/" style={{ textDecoration: "none" }}>
                 <span className="navbar-brand mb-0 h1 pl-5">Shoe Shop</span>
               </Link>
             </div>
@@ -70,12 +70,12 @@ export default class Layout extends Component {
                 <div className="col-sm-3"></div>
                 <div className="col-sm-2">
                   <div class="d-flex justify-content-around">
-                    <Link to="/shop" style={{ textDecoration: 'none' }}>
+                    <Link to="/shop" style={{ textDecoration: "none" }}>
                       <a className="navbar-link" href=".">
                         Men
                       </a>
                     </Link>
-                    <Link to="/shop" style={{ textDecoration: 'none' }}>
+                    <Link to="/shop" style={{ textDecoration: "none" }}>
                       <a className="navbar-link" href=".">
                         Women
                       </a>
@@ -84,10 +84,14 @@ export default class Layout extends Component {
                 </div>
                 <div className="col-sm-7">
                   <div className="row">
-                    <div className="col-sm-7"></div>
-                    <div className="col-sm-5">
+                    <div className="col-sm-2"></div>
+                    <div className="col-sm-10">
                       <div className="d-flex justify-content-around pr-5">
-                        <Link to="/cart" style={{ textDecoration: 'none' }}>
+                        <span className="navbar-search">
+                          <i class="fas fa-search"></i>
+                          <input className="form-control navbar-search-box" placeholder="Search"></input>
+                        </span>
+                        <Link to="/cart" style={{ textDecoration: "none" }}>
                           <a className="navbar-link" href=".">
                             <i class="fas fa-shopping-cart"></i>
                             &nbsp;&nbsp;Cart

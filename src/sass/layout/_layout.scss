@@ -9,23 +9,40 @@
     text-shadow: 0 2px 15px rgba(0, 0, 0, 0.7);
   }
 
+  & .fa-search {
+    padding-top: .3em;
+  }
+
+  &-search {
+    display: inline-flex;
+    color: $primary-color;
+    text-shadow: 0 2px 15px rgba(0, 0, 0, 0.7);
+    
+    &-box {
+      @include input-list;
+      padding: 0;
+      margin-left: 1em;
+      width: 130px;
+    }
+  }
+
   &-link {
     color: $primary-color;
     text-transform: uppercase;
     text-shadow: 0 2px 15px rgba(0, 0, 0, 0.7);
-    padding-bottom: .2em;
+    padding-bottom: 0.2em;
 
     &:hover {
       color: $primary-color;
       text-decoration: none !important;
       border-bottom: 3px solid $primary-color;
-      transition: .15s;
+      transition: 0.15s;
     }
   }
 }
 
 #navbar {
-  padding: 1.5em !important;
+  padding: 1em !important;
 }
 
 .sidenav {
@@ -52,7 +69,7 @@
     font-size: 20px;
     color: $primary-color;
     display: block;
-    transition: .15s;
+    transition: 0.15s;
 
     &:hover {
       border-left: 4px solid $primary-color;
@@ -65,7 +82,7 @@
   }
 
   &-buttons {
-    transition: .15s;
+    transition: 0.15s;
   }
 }
 
@@ -94,7 +111,6 @@
   }
 }
 
-
 hr {
   height: 12px;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
@@ -113,13 +129,33 @@ hr {
       border: none !important;
       border-bottom: 1px solid rgba($primary-color, 0.7) !important;
       border-radius: 0 !important;
+      transition: 0.15s;
+
+      &:hover {
+        cursor: pointer;
+        background: radial-gradient(
+          ellipse at bottom,
+          rgba($primary-color, 0.3) 0%,
+          transparent 70%
+        );
+        border-bottom: 3px solid $primary-color !important;
+        padding-bottom: 0.63em;
+      }
+
+      &:active {
+        background: radial-gradient(
+          ellipse at bottom,
+          rgba($primary-color, 0.4) 20%,
+          transparent 70%
+        );
+      }
     }
   }
 }
 
 .delete-icon {
   cursor: pointer;
-  transition: .15s;
+  transition: 0.15s;
   color: rgba($red-color, 1);
   text-shadow: 0 0 5px rgba($secondary-color, 0.5);
 
@@ -130,6 +166,6 @@ hr {
 
 .menu-btn {
   cursor: pointer;
-  border-bottom: 3px solid rgba(0,0,0,0);
+  border-bottom: 3px solid rgba(0, 0, 0, 0);
   padding: 0;
 }

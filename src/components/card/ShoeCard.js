@@ -6,7 +6,7 @@ export default class ShoeCard extends Component {
       <div className="shoe">
         <div
           className="d-flex flex-column align-items-center"
-          style={{ height: "35em" }}
+          style={{ height: "36em" }}
         >
           <div className="shoe-img">
             <img

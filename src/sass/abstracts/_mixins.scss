@@ -1,0 +1,36 @@
+@mixin input-list {
+  font-size: 12px;
+  height: 22px;
+  border: none;
+  border-radius: 0;
+  background: none;
+  border-bottom: 2px solid rgba($primary-color, 0.3);
+  
+  &:focus {
+    outline: none !important;
+    border: none;
+    background: none;
+    color: rgba($primary-color, 0.5);
+    border-bottom: 2px solid $primary-color;
+  }
+  
+  &::placeholder {
+    text-transform: uppercase;
+    color: rgba($primary-color, 0.3);
+    font-size: 12px;
+  }
+}
+
+@mixin btn-list {
+  .btn {
+    &:hover,
+    &:focus {
+      color: $primary-color;
+      background: rgba($secondary-color, 0.5);
+    }
+    &:active {
+      background: rgba($secondary-color, 0.7) !important;
+      box-shadow: none !important;
+    }
+  }
+}
